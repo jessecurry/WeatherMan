@@ -1,0 +1,21 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  identifier: MyString
+  state: MyString
+  name: MyString
+  latitude: 1.5
+  longitude: 1.5
+  html_url: MyString
+  rss_url: MyString
+  xml_url: MyString
+
+two:
+  identifier: MyString
+  state: MyString
+  name: MyString
+  latitude: 1.5
+  longitude: 1.5
+  html_url: MyString
+  rss_url: MyString
+  xml_url: MyString
