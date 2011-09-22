@@ -1,7 +1,9 @@
 development:
   adapter: postgresql
   host: localhost
-  database: development
+  database: weatherman
+  username: weatherman
+  password: weatherman
   encoding: UTF8
 
 # Warning: The database defined as "test" will be erased and
