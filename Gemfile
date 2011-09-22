@@ -17,10 +17,10 @@ gem 'pg'
 
 # Bundle the extra gems:
 gem 'devise'        # authentication
-gem 'geocoder'
-gem 'haml'
-gem 'heroku'
-gem 'jquery-rails'  #
+gem 'geocoder'      # 
+gem 'haml'          # 
+gem 'heroku'        # 
+gem 'jquery-rails'  # 
 
 # Bundle gems for the local environment. Make sure to
 # put test-only gems in this group so their generators
