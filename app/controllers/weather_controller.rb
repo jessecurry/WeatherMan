@@ -1,6 +1,6 @@
 class WeatherController < ApplicationController
   
-  def latitude_longitude
+  def current_conditions
     lat = params[:lat]
     lon = params[:lon]
     
