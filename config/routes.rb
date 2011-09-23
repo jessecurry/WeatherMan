@@ -1,4 +1,6 @@
 Weatherman::Application.routes.draw do
+  devise_for :users
+
   get "weather_stations/index"
 
   get "weather_stations/show"
@@ -16,6 +18,8 @@ Weatherman::Application.routes.draw do
 
   # Sample resource route (maps HTTP verbs to controller actions automatically):
   resources :weather_stations
+  
+  root :to => 'weather_stations#index'
 
   # Sample resource route with options:
   #   resources :products do
