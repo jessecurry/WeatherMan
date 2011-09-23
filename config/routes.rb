@@ -14,6 +14,7 @@ Weatherman::Application.routes.draw do
 
   # Sample of named route:
   match 'current_conditions(.:format)' => 'weather#current_conditions', :as => :current_conditions
+  match 'forecast(.:format)' => 'weather#forecast', :as => :forecast
   # This route can be invoked with weather_url(:lat => ll, :lon => ln)
 
   # Sample resource route (maps HTTP verbs to controller actions automatically):
