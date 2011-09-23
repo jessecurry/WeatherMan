@@ -7,7 +7,9 @@ namespace :noaa  do
     hydra = Typhoeus::Hydra.new
     
     # Build the request object
-    request = Typhoeus::Request.new("http://www.weather.gov/xml/current_obs/index.xml", :method => :get)
+    request = Typhoeus::Request.new("http://www.weather.gov/xml/current_obs/index.xml", 
+                                    :method => :get, 
+                                    :follow_location => true)
     
     # Setup the completion handler                                
     request.on_complete do |response|

@@ -1,0 +1,10 @@
+.header-content
+	%ul#top
+		%li
+			= link_to '/' do
+				%span.aboutus.sprite
+					= image_tag 'spacer.gif', :width => 12, :height => 12
+				= 'Home'
+	.sub-logo
+	.clearfix
+	%ul#main-nav= render :partial => 'layouts/menu'

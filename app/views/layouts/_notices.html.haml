@@ -1,0 +1,6 @@
+- if flash[:alert]
+	%p{ :class => 'flash-error' }
+		= flash[:alert]
+- if flash[:notice]
+	%p{ :class => 'flash-notice' }
+		= flash[:notice]

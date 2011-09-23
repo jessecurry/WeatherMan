@@ -1,0 +1,5 @@
+- title 'Weather Stations'
+.weather-stations
+  - @weather_stations.each do |weather_station|
+    .weather-station
+      = "#{weather_station.name}(#{weather_station.identifier})"

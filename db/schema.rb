@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110922212140) do
+ActiveRecord::Schema.define(:version => 20110923021407) do
 
   create_table "weather_stations", :force => true do |t|
     t.string   "identifier"
@@ -23,6 +23,7 @@ ActiveRecord::Schema.define(:version => 20110922212140) do
     t.string   "xml_url"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "address"
   end
 
   add_index "weather_stations", ["identifier"], :name => "index_weather_stations_on_identifier", :unique => true

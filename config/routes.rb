@@ -1,4 +1,8 @@
 Weatherman::Application.routes.draw do
+  get "weather_stations/index"
+
+  get "weather_stations/show"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
@@ -11,7 +15,7 @@ Weatherman::Application.routes.draw do
   # This route can be invoked with weather_url(:lat => ll, :lon => ln)
 
   # Sample resource route (maps HTTP verbs to controller actions automatically):
-  #   resources :products
+  resources :weather_stations
 
   # Sample resource route with options:
   #   resources :products do
