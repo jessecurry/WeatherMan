@@ -8,8 +8,14 @@ class WeatherController < ApplicationController
     weather_station = WeatherStation.near([lat, lon], 10).all.first
     
     # Pull current conditions as hash
-    current_conditions = pull_current_conditions weather_station.xml_url
+    current_conditions = {}
+    if weather_station.nil?
+      current_conditions = {:error => "No station found near #{lat}, #{lon}"}
+    else
+      current_conditions = pull_current_conditions weather_station.xml_url
+    end
 
+    #
     render :json => current_conditions # weather_station
   end
   
