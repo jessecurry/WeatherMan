@@ -2,4 +2,5 @@
 .weather-stations
   - @weather_stations.each do |weather_station|
     .weather-station
-      = "#{weather_station.name}(#{weather_station.identifier})"
+      = link_to "#{weather_station.name}(#{weather_station.identifier})", weather_station
+= will_paginate @weather_stations

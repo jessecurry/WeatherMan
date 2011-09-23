@@ -1,6 +1,6 @@
 class WeatherStationsController < ApplicationController
   def index
-    @weather_stations = WeatherStation.all
+    @weather_stations = WeatherStation.paginate(:page => params[:page])
   end
 
   def show

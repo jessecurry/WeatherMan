@@ -95,6 +95,7 @@ GEM
     tzinfo (0.3.29)
     warden (1.0.5)
       rack (>= 1.0)
+    will_paginate (3.0.1)
 
 PLATFORMS
   ruby
@@ -108,3 +109,4 @@ DEPENDENCIES
   pg
   rails (= 3.0.9)
   typhoeus
+  will_paginate (~> 3.0.0)

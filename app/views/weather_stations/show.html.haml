@@ -1,1 +1,12 @@
 - title @weather_station.name
+.weather-station
+  .information
+    = "#{@weather_station.name}(#{@weather_station.identifier})"
+    = @weather_station.state
+    = link_to 'html', @weather_station.html_url
+    = link_to 'rss', @weather_station.rss_url
+    = link_to 'xml', @weather_station.xml_url
+  .map
+    - if @weather_station.latitude && @weather_station.longitude
+      .map-container
+        = image_tag "http://maps.google.com/maps/api/staticmap?size=300x300&sensor=false&zoom=8&markers=#{@weather_station.latitude}%2C#{@weather_station.longitude}"
